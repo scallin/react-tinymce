@@ -12,8 +12,9 @@ This is a clone of the version provided in the web part samples project https://
 Changes include:
 - Changed the solution and feature ids so the deployment to production would succeed.
 - Changed the skin of the editor to use the lightgray
+- Changed the skin path so it points to a cdn library instead of local
 - Changed the name of the solution and web part to make it more user friendly
-- Added a few more plugins such as image, imagetool, and code
+- Added a few more plugins such as image, imagetool, and code (source code view)
 
 ![picture of the web part in action](./assets/preview.gif)
 
