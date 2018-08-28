@@ -19,7 +19,7 @@ Changes include:
 ![picture of the web part in action](./assets/preview.gif)
 
 ## Used SharePoint Framework Version 
-![drop](https://img.shields.io/badge/version-GA-green.svg)
+1.5.1 ![drop](https://img.shields.io/badge/version-GA-green.svg)
 
 ## Applies to
 
