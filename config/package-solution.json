@@ -1,0 +1,13 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Advanced Rich Text Editor",
+    "id": "c9b89fd2-67c9-4d0a-b57d-a85f7ab9678f",
+    "version": "2.5.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/AdvancedRichTextEditor.sppkg"
+  }
+}
