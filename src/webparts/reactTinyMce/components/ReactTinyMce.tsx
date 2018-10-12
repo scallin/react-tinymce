@@ -15,6 +15,14 @@ import 'tinymce/plugins/link';
 import 'tinymce/plugins/image';
 import 'tinymce/plugins/imagetools';
 import 'tinymce/plugins/code';
+import 'tinymce/plugins/advlist';
+import 'tinymce/plugins/lists';
+import 'tinymce/plugins/textcolor';
+import 'tinymce/plugins/media';
+import 'tinymce/plugins/fullscreen';
+import 'tinymce/plugins/hr';
+import 'tinymce/plugins/autoresize';
+import 'tinymce/plugins/searchreplace';
 
 import * as React from 'react';
 import styles from './ReactTinyMce.module.scss';
@@ -81,8 +89,8 @@ export default class ReactTinyMce extends React.Component<IReactTinyMceProps, IR
       <div className="tinyMceEditMode">
         <Editor
           init={{
-            plugins: ['paste', 'link', 'image', 'imagetools', 'code'],
-            /*skin_url: "../../src/webparts/reactTinyMce/skins/lightgray/"*/
+            plugins: ['paste link image imagetools code lists advlist textcolor media fullscreen hr autoresize searchreplace'],
+            toolbar: ['undo redo | formatselect | bold italic forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | searchreplace | fullscreen'],
             skin_url: 'https://cdn.tinymce.com/4/skins/lightgray'
           }}
           initialValue={this.state.content}
