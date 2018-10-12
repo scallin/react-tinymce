@@ -90,14 +90,14 @@ export default class ReactTinyMce extends React.Component<IReactTinyMceProps, IR
         <Editor
           init={{
             plugins: ['paste link image imagetools code lists advlist textcolor media fullscreen hr autoresize searchreplace'],
-            toolbar: ['undo redo | formatselect | bold italic forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | searchreplace | fullscreen'],
+            toolbar: ['undo redo | styleselect | bold italic forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | fullscreen'],
             skin_url: 'https://cdn.tinymce.com/4/skins/lightgray'
+            
           }}
           initialValue={this.state.content}
           onChange={(event) => {this.handleChange(event.target.getContent());}}
         />
       </div>
-      
     );
   }
 
