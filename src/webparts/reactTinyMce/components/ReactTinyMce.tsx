@@ -10,19 +10,20 @@ import * as tinymce from 'tinymce';
 Import the plugins that you want to use here.
 */
 import 'tinymce/themes/modern/theme';
-import 'tinymce/plugins/paste';
-import 'tinymce/plugins/link';
-import 'tinymce/plugins/image';
-import 'tinymce/plugins/imagetools';
-import 'tinymce/plugins/code';
 import 'tinymce/plugins/advlist';
-import 'tinymce/plugins/lists';
-import 'tinymce/plugins/textcolor';
-import 'tinymce/plugins/media';
+import 'tinymce/plugins/autoresize';
+import 'tinymce/plugins/code';
 import 'tinymce/plugins/fullscreen';
 import 'tinymce/plugins/hr';
-import 'tinymce/plugins/autoresize';
+import 'tinymce/plugins/image';
+import 'tinymce/plugins/imagetools';
+import 'tinymce/plugins/link';
+import 'tinymce/plugins/lists';
+import 'tinymce/plugins/media';
+import 'tinymce/plugins/paste';
 import 'tinymce/plugins/searchreplace';
+import 'tinymce/plugins/template';
+import 'tinymce/plugins/textcolor';
 
 import * as React from 'react';
 import styles from './ReactTinyMce.module.scss';
@@ -91,8 +92,8 @@ export default class ReactTinyMce extends React.Component<IReactTinyMceProps, IR
           init={{
             plugins: ['paste link image imagetools code lists advlist textcolor media fullscreen hr autoresize searchreplace'],
             toolbar: ['undo redo | styleselect | bold italic forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | fullscreen'],
-            skin_url: 'https://cdn.tinymce.com/4/skins/lightgray'
-            
+            skin_url: 'https://cdn.tinymce.com/4/skins/lightgray',
+            convert_urls : false            
           }}
           initialValue={this.state.content}
           onChange={(event) => {this.handleChange(event.target.getContent());}}
