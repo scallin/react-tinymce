@@ -29,7 +29,7 @@ Changes include:
 > Update accordingly as needed.
 
 ## Prerequisites
-If you are going to use tinymce be aware of it's lincense, and you must
+If you are going to use tinymce be aware of it's license, and you must
 agree to it.
 
 ## Solution
@@ -43,6 +43,7 @@ React-TinyMCE | @AustinBreslinDev
 Version|Date|Comments
 -------|----|--------
 1.0|Feb |Initial release
+2.0|Nov 2018 |Updated as outlined above
 
 ## Disclaimer
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
@@ -66,8 +67,6 @@ This Web Part illustrates the following concepts on top of the SharePoint Framew
 - Uses an Open Source, community driven Editor.
 - Can be extended to accept copy/paste from using Paste Plugin.
 - Can be extended to accept images using the manager in the Editor.
-- Can write your own Stlyes for all content on your site.
+- Can write your own Styles for all content on your site.
 - Can style your authoring experience using the skins folder.
 - For more features please look at the extensive list of extensions available.
-
-<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/React-TinyMce" />
